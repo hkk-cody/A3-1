@@ -120,7 +120,7 @@ def resize_for_processing(image, target_height=800):
 4. 그래프를 이미지 파일로 저장하고, "왜 어두운 이미지에서 엣지 검출이 어려운지"를 3~5문장으로 씁니다.
 
 **힌트**
-- `np.histogram(gray, bins=256, range=(0, 256))` 결과를 `gray.size`로 나누면 크기가 다른 사진끼리 비교할 수 있습니다.
+- `np.histogram(gray, bins=256, range=(0, 256))`은 `(개수 배열, 구간 경계)` 두 값을 돌려줍니다. 첫 번째 값(개수 배열)을 `gray.size`로 나누면 크기가 다른 사진끼리 비교할 수 있습니다.
 - 시각화는 Matplotlib/Seaborn 사용이 허용됩니다. `plt.savefig`로 저장해 보고서에 넣습니다.
 - 설명에는 숫자를 넣습니다. 예: "쉬운 케이스 평균 표준편차 ○○, 어두운 케이스 ○○ → 대비가 ○배 작습니다."
 
